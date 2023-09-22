@@ -1,4 +1,4 @@
-import getCategories from "@/actions/get-category";
+import getCategories from "@/actions/get-categories";
 import Link from "@/node_modules/next/link";
 import React from "react";
 import MainNav from "./main-nav";

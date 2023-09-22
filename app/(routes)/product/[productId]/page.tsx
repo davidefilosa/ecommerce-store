@@ -1,3 +1,5 @@
+export const revalidate = 0;
+
 import getProduct from "@/actions/get-product";
 import getProducts from "@/actions/get-products";
 import Gallery from "@/app/components/gallery/index";
