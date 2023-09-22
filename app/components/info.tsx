@@ -4,11 +4,13 @@ import { ShoppingCart } from "lucide-react";
 import { Product } from "@/types";
 import Button from "./ui/button";
 import Currency from "./ui/currency";
+import useCart from "@/hooks/use-cart";
 
 interface InfoProps {
   data: Product;
 }
 const Info: React.FC<InfoProps> = ({ data }) => {
+  const cart = useCart();
   return (
     <div>
       <h1 className="text-3xl font-bold text-gray-900">{data.name}</h1>
@@ -32,7 +34,10 @@ const Info: React.FC<InfoProps> = ({ data }) => {
         </div>
       </div>
       <div className="mt-10 flex items-center gap-x-3">
-        <Button className="flex items-center gap-x-2">
+        <Button
+          className="flex items-center gap-x-2"
+          onClick={() => cart.addItem(data)}
+        >
           Add to Cart
           <ShoppingCart />
         </Button>

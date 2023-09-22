@@ -2,7 +2,7 @@ import getBillboards from "@/actions/get-billboard";
 import getProducts from "@/actions/get-products";
 import React from "react";
 import Billboard from "../components/billboard";
-import ProductList from "../components/productList";
+import ProductList from "../components/product-list";
 import Container from "../components/ui/Container";
 
 const HomePage = async () => {

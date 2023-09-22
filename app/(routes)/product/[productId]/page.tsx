@@ -4,7 +4,7 @@ import getProduct from "@/actions/get-product";
 import getProducts from "@/actions/get-products";
 import Gallery from "@/app/components/gallery/index";
 import Info from "@/app/components/info";
-import ProductList from "@/app/components/productList";
+import ProductList from "@/app/components/product-list";
 import Container from "@/app/components/ui/Container";
 
 interface ProductPageProps {
