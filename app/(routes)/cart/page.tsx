@@ -1,7 +1,7 @@
 "use client";
 
 import CartItem from "@/app/(routes)/cart/components/cart-items";
-import Container from "@/app/components/ui/Container";
+import Container from "../../components/ui/container";
 import useCart from "@/hooks/use-cart";
 import { useEffect, useState } from "react";
 import Summary from "./components/summary";
