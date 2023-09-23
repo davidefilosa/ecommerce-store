@@ -1,9 +1,7 @@
 "use client";
 
 import CartItem from "@/app/(routes)/cart/components/cart-items";
-import Gallery from "@/app/components/gallery/index";
 import Container from "@/app/components/ui/Container";
-import NoResults from "@/app/components/ui/no-results";
 import useCart from "@/hooks/use-cart";
 import { useEffect, useState } from "react";
 import Summary from "./components/summary";
