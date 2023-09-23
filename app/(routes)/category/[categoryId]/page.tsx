@@ -5,7 +5,6 @@ import getColors from "@/actions/get-colors";
 import getProducts from "@/actions/get-products";
 import getSizes from "@/actions/get-sizes";
 import Billboard from "@/app/components/billboard";
-import Container from "../../../components/ui/container";
 import NoResults from "@/app/components/ui/no-results";
 import ProductCard from "@/app/components/ui/product-card";
 import Filter from "./components/filter";
@@ -36,7 +35,7 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
   const colors = await getColors();
   console.log(category);
   return (
-    <Container>
+    <>
       <Billboard data={category.billboard} />
       <div className="px-4 sm:px-6 lg:px-8 pb-24">
         <div className="lg:grid lg:grid-cols-5 lg:gap-x-8">
@@ -55,7 +54,7 @@ const CategoryPage: React.FC<CategoryPageProps> = async ({
           </div>
         </div>
       </div>
-    </Container>
+    </>
   );
 };
 
